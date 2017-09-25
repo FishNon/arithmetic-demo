@@ -25,13 +25,8 @@
 * [arithmetic06 | 数组判断](https://github.com/FishNon/arithmetic-demo/blob/master/demo01/arithemetic06.js)
 
 ## 2 列表 [demo02]
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
+* [demo01 | 实现列表类]()
+* [demo02 | 一个基于列表的应用（影碟租赁）]()
+* [practice01 | 插入元素]()
+* [practice02 | 插入元素]()
+* [practice03 | Person类]()

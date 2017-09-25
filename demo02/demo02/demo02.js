@@ -151,22 +151,40 @@ function showList(list) {
 
 var customer = new List();
 
-
 function Customer(name, film) {
     this.name = name;
     this.film = film;
 }
 
-function checkOut(name, movie, movieList, customerList) {
+var rentList = new List();
+
+
+function checkOut(name, movie, movieList, customerList, rentList) {
     if (movieList.contains(movie)) {
-        var c = new Customer(name,movie);
+        var c = new Customer(name, movie);
         customerList.append(c);
         movieList.remove(movie);
+        rentList.append(movie);
     } else {
+        if (rentList.contains(movie)) {
+            console.log('已租出：');
+            showList(rentList);
+            return true;
+        }
         console.log(movie + ' 不存在。');
     }
 }
 
+function check_in(name,film,movieList,rentList,CustomerList) {
+    if(rentList.contains(film)){
+        movieList.append(film);
+        rentList.remove(film);
+        CustomerList.remove({'name':name,'film':film});
+        console.log('归还成功！');
+    }else{
+        console.log('不存在！');
+    }
+}
 
 function createMovies(data) {
     var movieList = new List();
@@ -179,11 +197,30 @@ function createMovies(data) {
     var name = read_line();
     console.log('What movie would you like?');
     var movie = read_line();
-    checkOut(name,movie,movieList,customer);
+    checkOut(name, movie, movieList, customer, rentList);
 
     console.log('客户租借信息：');
     showList(customer);
 
     console.log('更新后的影单：');
     showList(movieList);
+
+    console.log('please enter your name:');
+    var name = read_line();
+    console.log('What movie would you like?');
+    var movie = read_line();
+    checkOut(name, movie, movieList, customer, rentList);
+
+    console.log('客户租借信息：');
+    showList(customer);
+
+    console.log('更新后的影单：');
+    // showList(movieList);
+
+    console.log('请输入要归还影碟的客户姓名：');
+    var name = read_line();
+    console.log('请输入要归还影碟的名称：');
+    var film = read_line();
+    check_in(name,film,movieList,rentList,customer);
+
 }
