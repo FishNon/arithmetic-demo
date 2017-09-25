@@ -4,7 +4,7 @@
 ## 1 数组 [demo01]
 * [demo01 | split方法由字符串生成数组](https://github.com/FishNon/arithmetic-demo/blob/master/demo01/demo01.js)
 * [demo02 | 数组的浅复制](https://github.com/FishNon/arithmetic-demo/blob/master/demo01/arithemetic02.js)
-* [demo03 | 数组的深赋值](https://github.com/FishNon/arithmetic-demo/blob/master/demo01/arithemetic01.js)
+* [demo03 | 数组的深复制](https://github.com/FishNon/arithmetic-demo/blob/master/demo01/arithemetic01.js)
 * [demo04 | indexOf方法查找元素](https://github.com/FishNon/arithmetic-demo/blob/master/demo01/arithemetic01.js)
 * [demo05 | lastIndexOf方法查找元素](https://github.com/FishNon/arithmetic-demo/blob/master/demo01/arithemetic01.js)
 * [demo06 | join方法/toString方法将数组转换为字符串](https://github.com/FishNon/arithmetic-demo/blob/master/demo01/arithemetic01.js)
@@ -27,6 +27,8 @@
 ## 2 列表 [demo02]
 * [demo01 | 实现列表类](https://github.com/FishNon/arithmetic-demo/blob/master/demo02/demo01.js)
 * [demo02 | 一个基于列表的应用（影碟租赁）](https://github.com/FishNon/arithmetic-demo/tree/master/demo02/demo02)
+> 注意：本地运行demo02中的js文件需要使用`bower install`及`npm install readline-sync`配置；
+
 * [practice01 | 插入元素](https://github.com/FishNon/arithmetic-demo/blob/master/demo02/practice01.js)
 * [practice02 | 插入元素](https://github.com/FishNon/arithmetic-demo/blob/master/demo02/practice02.js)
 * [practice03 | Person类](https://github.com/FishNon/arithmetic-demo/blob/master/demo02/practice03.js)
